@@ -1,0 +1,59 @@
+/* a:link{
+    color: orange;
+}
+
+a:visited{
+    color: turquoise;
+}
+
+div:hover{
+    color: violet;
+    font-size: 30px;
+}
+
+div:active{
+    color: green;
+    font-size: 15px;
+}
+
+input:focus{
+    color: blue;
+} */
+/* 
+li:last-child{
+    color: wheat;
+}
+p:only-child{
+    color: tomato;
+}
+[href^="http"]{
+    color: yellowgreen;
+}
+
+[href$='.com']{
+    color: saddlebrown;
+}
+
+[href*='example1']{
+    color: orange;
+} */
+
+/* li:nth-child(-2n+9){
+    color: orangered;
+} */
+
+li:nth-last-child(-n+4){
+    color: orangered;
+}
+
+/* div:nth-child(2n+3){
+    color: orchid;
+} */
+
+/* div:nth-of-type(2n+3){
+    color: orchid;
+} */
+
+div:nth-last-of-type(3n+2){
+    color: orchid;
+}

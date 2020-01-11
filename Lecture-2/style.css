@@ -1,0 +1,53 @@
+/* @import 'style1.css' */
+/* p{
+    color: blue;
+    font-size: 20px;
+}
+
+div{
+    color: greenyellow;
+} */
+/* 
+*{
+    color: orange;
+} */
+/* 
+#one{
+    color: khaki;
+    font-size: 30px;
+}
+
+.red{
+    color: red;
+}
+.orange{
+    color: orange;
+}
+.big,.medium{
+    font-size: 40px;
+}
+.big{
+    font-weight: bold;
+}
+
+.small{
+    font-size: 20px;
+}
+
+p{
+    color: blue;
+}
+ul li{
+    color: grey;
+}
+ul span{
+    color: hotpink;
+} */
+
+div~div{
+    color: green;
+}
+
+p[class="para2"]{
+    color: lightcoral;
+}
