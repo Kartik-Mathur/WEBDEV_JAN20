@@ -1,0 +1,26 @@
+div{
+    height: 30px;
+    background-color: chocolate;
+    border: 2px solid black;
+    margin: 10px;
+}
+
+#two{
+    position: fixed;
+    top: 30px;
+    left: 25px;
+}
+#ten{
+    position: sticky;
+    top: 30px;
+    bottom: 30px;
+}
+/* div{
+    border: 1px solid black;
+    margin: 10px;
+    display: inline-block;
+} */
+/* 
+#div1{
+    visibility: hidden;
+} */

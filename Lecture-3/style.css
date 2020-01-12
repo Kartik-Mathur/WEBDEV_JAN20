@@ -1,0 +1,84 @@
+img{
+    float : left;
+    margin: 10px;
+}
+p{
+    width: 500px;
+    float: left;
+}
+div{
+    background-color: blanchedalmond;
+}
+
+#id1::before,
+#id1::after{
+    content: ' ';
+    display: table;
+    clear: both;
+}
+/* br{
+    clear: left;
+} */
+/* p{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 700;
+    font-size: 20px;
+    font-variant: small-caps;
+    font-style: oblique;
+} */
+
+/* p::first-letter{
+    font-size: 25px;
+    text-shadow: Horizontal offset, vertical offset, blurr, color;
+    text-shadow: 3px 3px 2px blue;
+} */
+
+/* li{
+    border: 2px solid black;
+    list-style-position: outside;
+    list-style-type: decimal-leading-zero;
+}
+
+#div{
+    border: 2px solid black;
+    height: 120px;
+    overflow: scroll;
+    min-width: 300px;
+    max-width: 600px;
+} */
+
+/* #div{ */
+    /* padding-top: 40px;
+    padding-left: 40px; */
+    /* padding:10px 30px 20px 15px;
+    border: 2px dotted blue;
+    margin: 10px 20px 15px 30px;
+} */
+
+
+/* p:only-of-type{
+    color: blue;
+} */
+
+/* :root{
+    background-color: burlywood;
+    font-size: 30px;
+} */
+/* 
+input[type="text"]:enabled{
+    background-color: lightgoldenrodyellow;
+}
+
+:disabled{
+    background-color: lightgray;
+}
+
+
+
+p::first-line{
+    color: blue;
+}
+
+#phone::before{
+    content: '\260E';
+} */
