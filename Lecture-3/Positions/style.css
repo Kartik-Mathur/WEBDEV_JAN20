@@ -4,6 +4,9 @@ div{
     border: 2px solid black;
     margin: 10px;
 }
+/* a{
+    display: block;
+} */
 
 #two{
     position: fixed;

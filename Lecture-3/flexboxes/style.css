@@ -1,0 +1,27 @@
+#container{
+    height: 400px;
+    width: 500px;
+    background-color: orange;
+    display: flex;
+    /* flex-direction: column-reverse; */
+    flex-wrap: wrap;
+    /* justify-content: center; */
+    align-content: space-between;
+}
+
+#eight{
+    order: 2;
+    flex-grow: 1;
+}
+
+#fourteen{
+    order: 1;
+    flex-grow: 2;
+}
+
+div{
+    height: 30px;
+    width: 30px;
+    margin: 10px;
+    background-color: paleturquoise;
+}
