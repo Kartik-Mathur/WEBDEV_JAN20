@@ -12,13 +12,12 @@ div{
     width: 200px;
     position: absolute;
     transition-duration: 2s;
-    backface-visibility: hidden;
+    
 }
-
 .side-a{
-    /* background-color: goldenrod; */
     background: url('Vegeta.jpeg') goldenrod no-repeat center;
     z-index: 100;
+    backface-visibility: hidden;
     /* transform: rotateY(180deg); */
 }
 
@@ -27,7 +26,16 @@ div{
     transform: rotateY(180deg);
 }
 
-.wrap:hover div{
+.wrap:hover{
     transform: rotateY(180deg);
     transition-duration: 2s;
+}
+
+p{
+    color: white;
+    margin:10px;
+}
+
+a{
+    text-decoration: none;
 }
