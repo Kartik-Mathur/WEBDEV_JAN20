@@ -1,0 +1,33 @@
+body{
+    padding: 200px;
+    margin-left: 100px;
+    perspective: 800px;
+}
+.wrap{
+    position: relative;
+    transform-style: preserve-3d;
+}
+div{
+    height: 300px;
+    width: 200px;
+    position: absolute;
+    transition-duration: 2s;
+    backface-visibility: hidden;
+}
+
+.side-a{
+    /* background-color: goldenrod; */
+    background: url('Vegeta.jpeg') goldenrod no-repeat center;
+    z-index: 100;
+    /* transform: rotateY(180deg); */
+}
+
+.side-b{
+    background-color: blue;
+    transform: rotateY(180deg);
+}
+
+.wrap:hover div{
+    transform: rotateY(180deg);
+    transition-duration: 2s;
+}

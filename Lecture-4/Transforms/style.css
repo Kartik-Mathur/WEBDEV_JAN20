@@ -1,6 +1,7 @@
 body{
     padding: 200px;
     margin-left: 100px;
+    perspective: 800px;
 }
 div{
     height: 300px;
@@ -13,7 +14,6 @@ div{
     background: url('Vegeta.jpeg') no-repeat center;
     transition-duration: 2s;
 }
-
 .wrap:hover .box{
     transform: rotate(2turn);
     transition-duration: 2s;
