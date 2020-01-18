@@ -1,0 +1,36 @@
+body{
+    padding: 100px;
+    margin-left: 200px;
+}
+.wrap{
+    width: 600px;
+    height: 300px;
+    background-color: cadetblue;
+}
+div{
+    width: 0px;
+    height: 300px;
+}
+
+.box{
+    background-color: blue;
+    /* transition-property: background-color,border-radius; */
+    /* transition-property: all; */
+    transition-duration: 2s;
+    transition-timing-function: cubic-bezier();
+
+}
+
+/* .box:hover{
+    background-color: brown;
+    border-radius: 150px;
+    transition-property: background-color,border-radius;
+    transition-duration: 2s;
+} */
+
+.wrap:hover .box{
+    /* margin-left: 50%; */
+    width: 600px;
+    border-radius: 300px;
+    transition-timing-function: ease-out;
+}

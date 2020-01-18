@@ -1,0 +1,18 @@
+div{
+    width: 400px;
+    height: 400px;
+    /* overflow: scroll; */
+    border-radius: 200px;
+}
+p{
+    font-size: 40px;
+    color: white;
+}
+.box{
+    background-color: blue;
+    /* background-image: url('images.jpeg');
+    background-repeat: no-repeat;
+    background-position: center; */
+    /* background: url() center no-repeat blue; */
+    /* background-attachment: local; */
+}
