@@ -1,0 +1,20 @@
+body{
+    padding: 200px;
+    margin-left: 100px;
+}
+div{
+    height: 300px;
+    width: 200px;
+}
+.wrap{
+    background-color: goldenrod;
+}
+.box{
+    background: url('Vegeta.jpeg') no-repeat center;
+    transition-duration: 2s;
+}
+
+.wrap:hover .box{
+    transform: rotate(2turn);
+    transition-duration: 2s;
+}
