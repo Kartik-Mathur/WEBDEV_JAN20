@@ -17,4 +17,5 @@ div{
 .wrap:hover .box{
     transform: rotate(2turn);
     transition-duration: 2s;
+    transform-origin: 100% 100%;
 }
