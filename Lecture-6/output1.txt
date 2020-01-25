@@ -1,0 +1,53 @@
+{} + []
+0
+[] + {}
+"[object Object]"
++[]
+0
++'1'
+1
++'1121'
+1121
++'adsad'
+NaN
++{}
+NaN
+
+[].toString()
+""
+[1,2].toString()
+"1,2"
+[1,2,3,4,5].toString()
+"1,2,3,4,5"
++[]
+0
++[[[[]]]]
+0
+[[],[]].toString()
+","
++[[],[]]
+NaN
+
+parseInt('11')
+11
+parseInt('11.11')
+11
+parseInt('11 11')
+11
+parseFloat('11')
+11
+parseFloat('11.11')
+11.11
+parseFloat('11.11 111')
+11.11
+
+Infinity
+Infinity
+-Infinity
+-Infinity
+Infinity + 1
+Infinity
+Infinity - 1
+Infinity
+Infinity + -Infinity
+NaN
