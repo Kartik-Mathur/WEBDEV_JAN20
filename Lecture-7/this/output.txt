@@ -1,0 +1,10 @@
+window.name
+"John Snow"
+var x = 10
+undefined
+window.x
+10
+let y = 20
+undefined
+window.y
+undefined

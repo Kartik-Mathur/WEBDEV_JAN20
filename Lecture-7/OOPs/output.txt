@@ -1,0 +1,87 @@
+a.__proto__
+Object { … }
+
+c.__proto__ == b
+true
+c.__proto__.__proto__ ==a
+true
+a.__proto__
+Object { … }
+
+a.__proto__.__proto__
+null
+
+a.__proto__ == Object.prototype
+true
+Object.prototype
+Object { … }
+
+Object
+function Object()
+
+a.prototype
+undefined
+Object.prototype.constructor
+function Object()
+
+Object.prototype.constructor.prototype
+Object { … }
+//////////////////////////////////////////////////////////
+typeof Object
+"function"
+typeof Number
+"function"
+typeof Boolean
+"function"
+Object
+function Object()
+
+Boolean
+function Boolean()
+
+Number
+function Number()
+
+let N = Number('11.11')
+undefined
+N
+11.11
+N.__proto__
+Number { 0 }
+///////////////////////////////////////
+N.__proto__ == Number.prototype
+true
+let B = Boolean('asjbdk')
+undefined
+B
+true
+B.__proto__ == Boolean.prototype
+true
+
+// 
+Number('abhkda')
+NaN
+Number()
+0
+Number().__proto__ == Number.prototype
+true
+String().__proto__ == String.prototype
+true
+Boolean().__proto__ == Boolean.prototype
+true
+fun().__proto__ == fun.prototype
+false
+
+(new fun()).__proto__ == fun.prototype
+true
+fun().__proto__ == fun.prototype
+false
+fun().__proto__ == Number.prototype
+true
+Boolean()
+false
+new Boolean()
+Boolean { false }
+
+new Boolean().__proto__ == Boolean.prototype
+true
