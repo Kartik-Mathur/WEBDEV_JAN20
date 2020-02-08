@@ -1,0 +1,8 @@
+Boolean().__proto__ == Boolean.prototype
+true
+(new Boolean()).__proto__ == Boolean.prototype
+true
+funGen().__proto__ == funGen.prototype
+false
+(new funGen()).__proto__ == funGen.prototype
+true

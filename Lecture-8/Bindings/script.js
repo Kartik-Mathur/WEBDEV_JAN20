@@ -24,7 +24,7 @@ fun.apply(hogwards,['x','y'])
 
 
 function funGen(){
-    return 1;
+    return {k:1};
 }
 
 let f = new funGen()
