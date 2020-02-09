@@ -7,15 +7,6 @@ function downloadFile(url,download){
     },5000) 
 }
 
-downloadFile('http://example.com/mp.mp3',function(downloaded_file){
-    console.log(`File downloaded as ${downloaded_file}`)
-    CompressFile(downloaded_file,function(compressed_file){
-        console.log('File compressed as '+compressed_file)
-        uploadFile(compressed_file,function(path){
-            console.log('File uploaded at '+path)
-        })
-    })
-})
 function CompressFile(filename,compress){
     console.log('Compressions starts')
     setTimeout(function(){
@@ -34,6 +25,15 @@ function uploadFile(compressed_filname,upload){
     },5000)
 }
 
+downloadFile('http://example.com/mp.mp3',function(downloaded_file){
+    console.log(`File downloaded as ${downloaded_file}`)
+    CompressFile(downloaded_file,function(compressed_file){
+        console.log('File compressed as '+compressed_file)
+        uploadFile(compressed_file,function(path){
+            console.log('File uploaded at '+path)
+        })
+    })
+})
 
 
 
