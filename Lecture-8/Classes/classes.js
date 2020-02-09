@@ -7,7 +7,7 @@ class Person{
         }
         // this.getFirstName = function(){
         //     return this.name.split(' ')[0]
-        // }
+        // } 
     }
 
     getFirstName(){
