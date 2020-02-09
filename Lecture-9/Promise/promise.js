@@ -9,13 +9,13 @@ let p = new Promise(function(resolve,reject){
     },3000)
 })
 
-    p
-    .then(function(str){
-        console.log(str)
-    })
-    .catch(function(error){
-        console.log(error.message) 
-    })
+    // p
+    // .then(function(str){
+    //     console.log(str)
+    // })
+    // .catch(function(error){
+    //     console.log(error.message) 
+    // })
 
 
 // setTimeout(function(){

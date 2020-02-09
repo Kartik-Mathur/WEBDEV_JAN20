@@ -15,6 +15,9 @@ function downloadFile(url){
 function compressFile(downloaded_file){
     return new Promise(function(resolve,reject){
         console.log('Compression starts')
+        if(-1 == ['mp3','ogg'].indexOf(downloaded_file.split('.')[1])){
+            throw new Error('We can only compress audio files')
+        } 
         setTimeout(function(){
             let compressed_file = downloaded_file.split('.')[0]+'.zip'
             console.log('Compression ends')
@@ -34,9 +37,12 @@ function uploadFile(compressed_file){
     })
 }
 
-downloadFile('http://example.com/mp.mp3')
+downloadFile('http://example.com/mp.mp4')
     .then(compressFile)
     .then(uploadFile)
+    .catch(function(error){
+        console.log(error.message) 
+    })
     
 // downloadFile('http://example.com/mp.mp3') 
 //     .then(function(downloaded_file){
