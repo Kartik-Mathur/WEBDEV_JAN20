@@ -1,0 +1,14 @@
+class Person{
+    // Data member
+
+    setAge(age){
+        this.age = age
+        return this
+    }
+
+    setName(name){
+        this.name = name
+        return this
+    }
+
+};
