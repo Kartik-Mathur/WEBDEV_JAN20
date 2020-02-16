@@ -18,7 +18,9 @@ $(document.body)
                         })
                     )
                     .append(
-                        $('<button>').text('↓').click((ev)=>{
+                        $('<button>')
+                        .attr('class','btn-down')
+                        .text('↓').click((ev)=>{
                             $(ev.target).parent()
                                 .insertAfter($(ev.target).parent().next() )
                         })
@@ -32,6 +34,7 @@ $(document.body)
                         })
                     )
                 )
+                $('#newtask').val(' ')
         })
 )
 .append(
