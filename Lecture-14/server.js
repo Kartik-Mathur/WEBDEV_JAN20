@@ -11,7 +11,8 @@ app.get('/tasks',(req,res)=>{
 
 app.get('/addtask',(req,res)=>{
     arr.push(req.query.m)
-    res.send('Success')
+    // res.send('Success')
+    res.redirect('/tasks')
 })
 
 app.listen(4343,()=>{
