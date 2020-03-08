@@ -1,27 +1,33 @@
 $(()=>{
+
     function refreshTodo(){
-        $('#tasklist').empty() 
+        $('#tasklist').empty()
         $.get(
             '/tasks',
-            (data)=>{     
+            (data)=>{
                 for(let item of data){
                     $('#tasklist').append(
                         `<li>
                             <b>${item.task}</b>
-                            ${item.priority}
+                             ${item.priority}
                         </li>`
                     )
                 }
             }
-            )
+        )
     }
-    refreshTodo() 
+
+    refreshTodo()
+
     $('#addtask').click(()=>{
-        $.get(
-            `/addtask?task=${$('#task').val()}&priority=${$('#priority').val()}`,
+        $.post(
+            '/tasks',
+            {
+                task:$('#task').val() ,
+                priority: +($('#priority').val()||1)
+            },
             (data)=>{
                 if(data == 'success'){
-                    console.log('Here')
                     refreshTodo()
                 }
             }
