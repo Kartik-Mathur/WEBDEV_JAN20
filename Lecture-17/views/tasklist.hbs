@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Todo list 1</h1>
+    <form action="/task" method="POST">
+        <input type="text" name="name">
+        <button type="submit">ADD</button>
+    </form>
+    <ul id="tasklist">
+        {{#each todo as |item|}}
+            <li>{{item.name}} {{item.priority}}</li>
+        {{/each}}
+    </ul>
+</body>
+</html>
