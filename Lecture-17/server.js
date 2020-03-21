@@ -21,10 +21,10 @@ app.get('/task',(req,res)=>{
 })
 
 app.post('/task',(req,res)=>{
-    console.log('In here')
+    // console.log('In here')
     todo.push({
         name:req.body.name,
-        priority:+(req.body.name||1)
+        priority:+(req.body.priority||1)
     })
     if(req.query.mode == 'json'){
         return res.send('successs')
