@@ -4,6 +4,7 @@ const {db,Task} = require('./db')
 
 app.use(express.json())
 app.use(express.urlencoded({extended:true}))
+app.use('/',exress.static(__dirname+'/static'))
 
 app.get('/task',async(req,res)=>{
     let val = {}
