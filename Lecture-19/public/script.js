@@ -5,8 +5,13 @@ setTimeout(()=>{
     console.log(socket.id)
 },100)
 
-socket.on('chat_recieved',()=>{
+socket.on('chat_recieved',(data)=>{
     console.log('Chat recieved successfully')
+    $('#list').append(
+        $('<li>').text(
+            `${data.username} : ${data.msg}`
+        )
+    )
 })
 
 socket.on('signup_successfull',()=>{

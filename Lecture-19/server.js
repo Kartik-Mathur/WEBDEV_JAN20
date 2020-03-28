@@ -15,7 +15,10 @@ io.on('connection',(socket)=>{
     console.log(socket.id) 
     socket.on('chat',(data)=>{
         console.log(userMap[socket.id] + ' says '+data.msg)
-        socket.emit('chat_recieved')
+        socket.broadcast.emit('chat_recieved',{ // io.emit, socket.emit
+            msg:data.msg,
+            username:userMap[socket.id]
+        })
     })
     socket.on('signup',(data)=>{
         userMap[socket.id] = data.username
