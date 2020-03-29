@@ -28,6 +28,7 @@ $(()=>{
         })
 
     })
+
     $('#send').click(()=>{
         console.log('Sending Chat')
         socket.emit('chat',{
