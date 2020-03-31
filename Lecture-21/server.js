@@ -28,7 +28,7 @@ app.get('/',(req,res)=>{
     res.redirect('/profile')
 })
 
-db.sync()
+db.sync({alter:true})
     .then(()=>{
         app.listen(4444,()=>{
             console.log('http://localhost:4444')

@@ -6,5 +6,4 @@ route.get('/',(req,res)=>{
         // responsibililty ki kaise aaya, vo hume req.user ke through de deta h
     })
 })
-
 module.exports = {route}

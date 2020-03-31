@@ -10,4 +10,21 @@ route.post('/',passport.authenticate('local',{
     failureRedirect:'/login'
 }))
 
+route.get('/facebook',passport.authenticate('facebook')) // yeh facebook ke pass bhej deta hai
+route.get('/twitter',passport.authenticate('twitter'))
+
+route.get('/facebook/callback',
+    passport.authenticate('facebook',{
+        successRedirect:'/profile',
+        failureRedirect:'/login'
+    })
+)
+route.get('/twitter/callback',
+    passport.authenticate('twitter',{
+        successRedirect:'/profile',
+        failureRedirect:'/login'
+    })
+)
+// to login from facebook
+
 module.exports={route}
